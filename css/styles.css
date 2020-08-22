@@ -1,39 +1,30 @@
 /*
 ********************************************************************************
-** TAG SELECTORS                                                              **
+** ELEMENT SELECTORS                                                          **
 ********************************************************************************
 */
 
 body {
 font-family: "Montserrat";
+text-align: center;
 }
 
-h1 {
-  font-family: 'Montserrat-Black', sans-serif;
-  font-size: 3.5rem;
-  font-weight: 900;
-  line-height: 1.5;
-}
-
-h3 {
-  font-family: 'Montserrat-Bold';
-  font-size: 1.5rem;
-  font-weight: bolder;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
 }
 
 p {
-  line-height: 1.5;
   color: #8F8F8F
 }
 
 /*
 ********************************************************************************
-** CLASS SELECTORS                                                            **
+** GENERAL STUFF                                                              **
 ********************************************************************************
 */
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 7% 15%;
 }
 
 .logo {
@@ -42,13 +33,44 @@ p {
 
 /*
 ********************************************************************************
-** ID SELECTORS                                                               **
+** HEADINGS                                                                   **
+********************************************************************************
+*/
+
+.big-heading {
+  font-family: 'Montserrat-Black', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/*
+********************************************************************************
+** TITLE SECTION                                                              **
 ********************************************************************************
 */
 
 #title {
   background-color: #FF4C68;
   color: #FFF;
+  position: relative;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+.title-image {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
 }
 
 /*
@@ -58,7 +80,8 @@ p {
 */
 
 #features {
-  padding: 7% 10%;
+  background-color: #FFF;
+  position: relative;
 }
 
 .feature-image {
@@ -71,8 +94,11 @@ p {
 }
 
 .feature-box {
-  text-align: center;
   padding: 3%;
+}
+
+.feature-title {
+  font-size: 1.7rem;
 }
 
 /*
@@ -111,11 +137,83 @@ p {
 
 /*
 ********************************************************************************
-** TITLE IMAGE                                                                **
+** TESTIMONIAL SECTION                                                        **
 ********************************************************************************
 */
 
-.title-image {
-  width: 60%;
-  transform: rotate(25deg);
+#testimonials {
+  background-color: #ef8172;
+  color: #FFF;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/*
+********************************************************************************
+** PRICING SECTION                                                            **
+********************************************************************************
+*/
+
+#pricing {
+  padding: 100px;
+}
+
+.pricing-column {
+  padding: 3%;
+}
+
+.price-text{
+  font-size: 2.2rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+/*
+********************************************************************************
+** CTA SECTION                                                                **
+********************************************************************************
+*/
+
+#cta {
+  background-color: #FF4C68;
+  color: #FFF;
+}
+
+/*
+********************************************************************************
+** FOOTER SECTION                                                             **
+********************************************************************************
+*/
+
+.footer-icons {
+  margin: 3%;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
 }
